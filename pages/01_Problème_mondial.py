@@ -9,7 +9,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from src.styles import load_css, page_header, section_header, insight_box
 from src.utils import load_data
 
-# Config & CSS
+# Config & CSSs
 st.set_page_config(
     page_title="MindTrack | Problème mondial",
     page_icon="assets/favicon.png",
