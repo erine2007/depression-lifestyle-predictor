@@ -113,15 +113,15 @@ with col_left:
         unsafe_allow_html=True
     )
     steps = [
-        ("fas fa-globe",      "Étape 1 — Le problème mondial",
+        ("fas fa-globe",      "Étape 1 : Le problème mondial",
          "Visualiser l'ampleur des troubles mentaux par pays et condition", "#4F7A67"),
-        ("fas fa-search",     "Étape 2 — Les facteurs de risque",
+        ("fas fa-search",     "Étape 2 : Les facteurs de risque",
          "Explorer l'impact du sommeil, stress, sport et temps d'écran", "#C97B52"),
-        ("fas fa-chart-bar",  "Étape 3 — Exploration des données",
+        ("fas fa-chart-bar",  "Étape 3 : Exploration des données",
          "Analyse exploratoire interactive avec filtres dynamiques", "#4F7A67"),
-        ("fas fa-robot",      "Étape 4 — Modèle Machine Learning",
+        ("fas fa-robot",      "Étape 4 : Modèle Machine Learning",
          "Comparaison de 4 modèles de classification et interprétation", "#C97B52"),
-        ("fas fa-crosshairs", "Étape 5 — Simulateur de risque",
+        ("fas fa-crosshairs", "Étape 5 : Simulateur de risque",
          "Entrez vos habitudes et obtenez une estimation personnalisée", "#4F7A67"),
     ]
     for icon, title, desc, accent in steps:

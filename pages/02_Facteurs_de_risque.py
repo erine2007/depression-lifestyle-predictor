@@ -9,7 +9,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from src.styles import load_css, page_header, section_header, insight_box
 from src.utils import load_data
 
-# ── Config & CSS
+# Config & CSS
 st.set_page_config(
     page_title="MindTrack | Facteurs de risque",
     page_icon="assets/favicon.png",
@@ -18,7 +18,7 @@ st.set_page_config(
 )
 st.markdown(load_css(), unsafe_allow_html=True)
 
-# ── Chargement des données
+# Chargement des données
 df = load_data()
 
 # Palette couleurs conditions
@@ -29,7 +29,7 @@ colors = {
     "Bipolar"   : "#F59E0B"
 }
 
-# ── Header
+# Header
 page_header(
     icon="fas fa-magnifying-glass-chart",
     tag="Étape 2",
@@ -39,7 +39,7 @@ page_header(
 
 st.markdown("<br>", unsafe_allow_html=True)
 
-# ── Section 1 : Sommeil
+# Section 1 : Sommeil
 section_header(
     icon="fas fa-moon",
     title="Sommeil",
@@ -112,7 +112,7 @@ with col_right:
 insight_box("""
     Les moyennes de sommeil sont très proches entre conditions
     (entre <strong>6.45h et 6.48h</strong>). Les boxplots montrent des
-    dispersions similaires pour toutes les conditions — le sommeil seul
+    dispersions similaires pour toutes les conditions, le sommeil seul
     ne permet pas de discriminer les groupes. Cependant, les individus
     dormant <strong>moins de 5h ou plus de 9h</strong> présentent une
     distribution plus marquée vers Depression et PTSD, suggérant que
@@ -122,7 +122,7 @@ insight_box("""
 
 st.markdown("<br>", unsafe_allow_html=True)
 
-# ── Section 2 : Stress
+# Section 2 : Stress
 section_header(
     icon="fas fa-brain",
     title="Niveau de stress",
@@ -210,13 +210,13 @@ insight_box("""
     les 4 conditions. À l'inverse, <strong>Bipolar</strong> montre la répartition
     la plus équilibrée entre les trois niveaux. Ces écarts, bien que modestes,
     indiquent que le niveau de stress est <strong>légèrement plus discriminant
-    pour la dépression</strong> que pour les autres conditions — ce qui en fait
+    pour la dépression</strong> que pour les autres conditions, ce qui en fait
     une variable à inclure dans le modèle prédictif.
 """)
 
 st.markdown("<br>", unsafe_allow_html=True)
 
-# ── Section 3 : Activité physique
+# Section 3 : Activité physique
 section_header(
     icon="fas fa-person-running",
     title="Activité physique",
@@ -316,7 +316,7 @@ with col_ex_right:
 insight_box("""
     La <strong>Depression</strong> présente le taux d'exercice élevé le plus bas
     (~30.5%) et le taux d'exercice faible le plus élevé (~35%) parmi les 4 conditions.
-    C'est le signal le plus marqué observé dans toute cette analyse des facteurs —
+    C'est le signal le plus marqué observé dans toute cette analyse des facteurs,
     une tendance cohérente avec la littérature clinique qui établit un lien direct
     entre <strong>sédentarité et risque dépressif</strong>. L'activité physique
     est donc la variable catégorielle la plus prometteuse pour notre modèle prédictif.
@@ -324,7 +324,7 @@ insight_box("""
 
 st.markdown("<br>", unsafe_allow_html=True)
 
-# ── Section 4 : Temps d'écran
+# Section 4 : Temps d'écran
 section_header(
     icon="fas fa-display",
     title="Temps d'écran",
@@ -398,7 +398,7 @@ with col_screen_right:
 insight_box("""
     Les distributions de temps d'écran sont quasi-identiques entre les 4 conditions
     (médiane autour de <strong>5h/jour</strong>). Les moyennes par condition
-    confirment l'absence de signal discriminant — les écarts sont inférieurs
+    confirment l'absence de signal discriminant, les écarts sont inférieurs
     à 10 minutes entre groupes. Contrairement aux idées reçues,
     <strong>le temps d'écran seul n'est pas un prédicteur fiable</strong>
     de la condition mentale dans cet échantillon, ce qui suggère que c'est
@@ -408,7 +408,7 @@ insight_box("""
 
 st.markdown("<br>", unsafe_allow_html=True)
 
-# ── Section 5 : Score social & bonheur
+# Section 5 : Score social & bonheur
 section_header(
     icon="fas fa-heart",
     title="Interaction sociale & bonheur",
@@ -476,7 +476,7 @@ insight_box("""
     similaires entre conditions, avec des médianes proches de <strong>5.5/10</strong>
     pour les deux métriques. Toutefois, la <strong>Depression</strong> montre
     une légère concentration vers les scores de bonheur bas (1-3) plus marquée
-    que les autres conditions — un signal faible mais cohérent avec l'intuition
+    que les autres conditions, un signal faible mais cohérent avec l'intuition
     clinique. Ces deux variables seront incluses dans le modèle comme
     <strong>features secondaires</strong>, en complément des variables
     comportementales plus discriminantes.

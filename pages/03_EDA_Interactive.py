@@ -13,7 +13,7 @@ from src.utils import load_data
 
 favicon = Image.open("assets/favicon.png")
 st.set_page_config(
-    page_title="MindTrack — EDA Interactive",
+    page_title="MindTrack | EDA Interactive",
     page_icon=favicon,
     layout="wide",
     initial_sidebar_state="expanded"
@@ -29,7 +29,7 @@ colors = {
     "Bipolar"   : "#22372D"
 }
 
-# ── Header
+# Header
 page_header(
     icon="fas fa-chart-bar",
     tag="Étape 3",
@@ -46,7 +46,7 @@ st.markdown(
     'box-shadow:0 3px 10px rgba(34,55,45,0.08);">'
     '<div style="color:#22372D;font-size:0.85rem;font-weight:600;margin-bottom:0.8rem;">'
     '<i class="fas fa-sliders" style="color:#4F7A67;margin-right:0.5rem;"></i>'
-    'Filtres globaux — appliqués à toutes les visualisations</div>'
+    'Filtres globaux : appliqués à toutes les visualisations</div>'
     '</div>',
     unsafe_allow_html=True
 )
@@ -214,7 +214,7 @@ with col_heat_info:
 
 insight_box(
     "La heatmap révèle des corrélations très faibles entre toutes les variables numériques "
-    "— les valeurs restent proches de <strong>0</strong> quelle que soit la sélection. "
+    ",les valeurs restent proches de <strong>0</strong> quelle que soit la sélection. "
     "Cela confirme que les variables numériques sont <strong>indépendantes entre elles</strong>, "
     "et que le pouvoir prédictif du modèle reposera principalement sur les "
     "<strong>variables catégorielles</strong> (stress, exercice, alimentation)."
@@ -383,7 +383,7 @@ fig_scatter.update_layout(
 st.plotly_chart(fig_scatter, use_container_width=True)
 
 insight_box(
-    "Le scatter plot confirme l'absence de clusters distincts entre les 4 conditions — "
+    "Le scatter plot confirme l'absence de clusters distincts entre les 4 conditions, "
     "les points de chaque couleur se mélangent uniformément dans tout l'espace de représentation. "
     "Cette absence de séparation linéaire explique pourquoi nos modèles ML "
     "peinent à dépasser <strong>25% de précision</strong> en classification multi-classes : "
@@ -475,7 +475,7 @@ with col_cat2:
 insight_box(
     f"L'analyse de <strong>{cat_var}</strong> révèle des répartitions proches entre conditions. "
     "Les écarts les plus notables concernent <strong>Exercise Level</strong> où la Depression "
-    "présente le taux d'exercice élevé le plus bas (~30.5%) — signal le plus discriminant "
+    "présente le taux d'exercice élevé le plus bas (~30.5%) signal le plus discriminant "
     "identifié dans l'ensemble du dataset. Utilisez les filtres en haut de page pour "
     "explorer ces nuances sur des sous-groupes spécifiques."
 )
