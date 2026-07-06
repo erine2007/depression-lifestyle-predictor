@@ -90,10 +90,10 @@ metrics = [
 for col, (icon, value, label, accent) in zip([col1, col2, col3, col4], metrics):
     with col:
         st.markdown(
-            f'<div style="background:#FFFFFF;border:1.5px solid #D6DDD7;'
-            f'border-top:4px solid {accent};border-radius:14px;'
+            f'<div style="background:#FFFFFF;border:1px solid #E8E4DE;'
+            f'border-radius:14px;'
             f'padding:1.6rem 1.2rem;text-align:center;'
-            f'box-shadow:0 4px 16px rgba(34,55,45,0.1),0 1px 4px rgba(34,55,45,0.06);">'
+            f'box-shadow:0 2px 10px rgba(34,55,45,0.07),0 1px 4px rgba(34,55,45,0.06);">'
             f'<div style="color:{accent};font-size:1.4rem;margin-bottom:0.7rem;"><i class="{icon}"></i></div>'
             f'<div style="font-size:2rem;font-weight:800;color:#22372D;margin-bottom:0.3rem;">{value}</div>'
             f'<div style="font-size:0.72rem;color:#8C948E;text-transform:uppercase;'
@@ -126,12 +126,12 @@ with col_left:
     ]
     for icon, title, desc, accent in steps:
         st.markdown(
-            f'<div style="background:#FFFFFF;border:1.5px solid #D6DDD7;'
-            f'border-left:4px solid {accent};border-radius:12px;'
+            f'<div style="background:#FFFFFF;border:1px solid #E8E4DE;'
+            f'border-left:2px solid #D6DDD7;border-radius:12px;'
             f'padding:1rem 1.3rem;margin-bottom:0.7rem;display:flex;align-items:flex-start;'
             f'gap:1rem;box-shadow:0 3px 10px rgba(34,55,45,0.08);">'
             f'<div style="width:40px;height:40px;border-radius:10px;background:#EEF2EC;'
-            f'border:1.5px solid #D6DDD7;display:flex;align-items:center;justify-content:center;'
+            f'border:1px solid #E8E4DE;display:flex;align-items:center;justify-content:center;'
             f'flex-shrink:0;color:{accent};font-size:1rem;"><i class="{icon}"></i></div>'
             f'<div>'
             f'<div style="color:#22372D;font-size:0.92rem;font-weight:600;margin-bottom:0.2rem;">{title}</div>'
@@ -170,16 +170,16 @@ with col_right:
     ]
 
     html = (
-        '<div style="background:#FFFFFF;border:1.5px solid #D6DDD7;border-radius:16px;'
+        '<div style="background:#FFFFFF;border:1px solid #E8E4DE;border-radius:16px;'
         'padding:1.3rem;box-shadow:0 4px 16px rgba(34,55,45,0.09);">'
     )
     for bg, color, icon, label, value, sub in about_items:
         html += (
             f'<div style="display:flex;align-items:center;gap:0.9rem;padding:0.85rem 1rem;'
             f'background:{bg};border-radius:10px;margin-bottom:0.6rem;'
-            f'border:1.5px solid #D6DDD7;">'
+            f'border:1px solid #E8E4DE;">'
             f'<div style="width:36px;height:36px;border-radius:9px;background:#FFFFFF;'
-            f'color:{color};border:1.5px solid #D6DDD7;'
+            f'color:{color};border:1px solid #E8E4DE;'
             f'display:flex;align-items:center;justify-content:center;font-size:0.9rem;flex-shrink:0;">'
             f'<i class="{icon}"></i></div>'
             f'<div>'
@@ -191,7 +191,7 @@ with col_right:
         )
     html += (
         '<div style="display:flex;align-items:center;gap:0.6rem;padding:0.65rem 1rem;'
-        'background:#EEF2EC;border:1.5px solid #D6DDD7;border-radius:10px;">'
+        'background:#EEF2EC;border:1px solid #E8E4DE;border-radius:10px;">'
         '<div style="width:8px;height:8px;background:#4F7A67;border-radius:50%;flex-shrink:0;"></div>'
         '<div style="color:#4F7A67;font-size:0.78rem;font-weight:500;">'
         '<i class="fas fa-code-branch" style="margin-right:0.4rem;"></i>Version 1.0 — Juillet 2026</div>'

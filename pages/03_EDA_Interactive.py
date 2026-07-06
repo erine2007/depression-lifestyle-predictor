@@ -41,7 +41,7 @@ page_header(
 # FILTRES GLOBAUX
 # ══════════════════════════════════════════
 st.markdown(
-    '<div style="background:#FFFFFF;border:1.5px solid #D6DDD7;border-radius:12px;'
+    '<div style="background:#FFFFFF;border:1px solid #E8E4DE;border-radius:12px;'
     'padding:1.2rem 1.5rem;margin-bottom:1.5rem;'
     'box-shadow:0 3px 10px rgba(34,55,45,0.08);">'
     '<div style="color:#22372D;font-size:0.85rem;font-weight:600;margin-bottom:0.8rem;">'
@@ -169,7 +169,7 @@ with col_heat_info:
     top_neg = corr_df.tail(3)
 
     st.markdown(
-        '<div style="background:#F9F7F3;border:1.5px solid #D6DDD7;'
+        '<div style="background:#F9F7F3;border:1px solid #E8E4DE;'
         'border-radius:10px;padding:1rem;">'
         '<div style="color:#22372D;font-size:0.8rem;font-weight:600;margin-bottom:0.7rem;">'
         '<i class="fas fa-arrow-trend-up" style="color:#4F7A67;margin-right:0.4rem;"></i>'
@@ -192,7 +192,7 @@ with col_heat_info:
     st.markdown("<br>", unsafe_allow_html=True)
 
     st.markdown(
-        '<div style="background:#F9F7F3;border:1.5px solid #D6DDD7;'
+        '<div style="background:#F9F7F3;border:1px solid #E8E4DE;'
         'border-radius:10px;padding:1rem;">'
         '<div style="color:#22372D;font-size:0.8rem;font-weight:600;margin-bottom:0.7rem;">'
         '<i class="fas fa-arrow-trend-down" style="color:#C97B52;margin-right:0.4rem;"></i>'
@@ -310,8 +310,8 @@ with col_dist_right:
     for condition, row in stats.iterrows():
         color_cond = colors.get(condition, "#4F7A67")
         st.markdown(
-            f'<div style="background:#FFFFFF;border:1.5px solid #D6DDD7;'
-            f'border-left:4px solid {color_cond};border-radius:10px;'
+            f'<div style="background:#FFFFFF;border:1px solid #E8E4DE;'
+            f'border-left:2px solid #D6DDD7;border-radius:10px;'
             f'padding:0.8rem 1rem;margin-bottom:0.6rem;'
             f'box-shadow:0 2px 8px rgba(34,55,45,0.06);">'
             f'<div style="color:#22372D;font-size:0.82rem;font-weight:600;'

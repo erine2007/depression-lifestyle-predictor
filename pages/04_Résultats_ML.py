@@ -109,10 +109,10 @@ for col, (name, short, accent) in zip([col1, col2, col3, col4], model_configs):
              if is_best else "")
     with col:
         st.markdown(
-            f'<div style="background:#FFFFFF;border:1.5px solid #D6DDD7;'
-            f'border-top:4px solid {border_top};border-radius:14px;'
+            f'<div style="background:#FFFFFF;border:1px solid #E8E4DE;'
+            f'border-radius:14px;'
             f'padding:1.3rem 1rem;text-align:center;'
-            f'box-shadow:0 4px 16px rgba(34,55,45,0.1);">'
+            f'box-shadow:0 2px 10px rgba(34,55,45,0.07);">'
             f'<div style="color:#66736A;font-size:0.72rem;font-weight:600;'
             f'text-transform:uppercase;letter-spacing:0.06em;margin-bottom:0.5rem;">'
             f'{short}{badge}</div>'
@@ -244,7 +244,7 @@ with col_cm_info:
             unsafe_allow_html=True
         )
     st.markdown(
-        '<div style="background:#F9F7F3;border:1.5px solid #D6DDD7;'
+        '<div style="background:#F9F7F3;border:1px solid #E8E4DE;'
         'border-radius:10px;padding:1rem;margin-top:0.5rem;">'
         '<div style="color:#22372D;font-size:0.8rem;font-weight:600;margin-bottom:0.5rem;">'
         'Lecture</div>'
@@ -319,8 +319,8 @@ with col_fi_info:
     medals = ["#C97B52", "#7D9A7B", "#4F7A67"]
 
     st.markdown(
-        '<div style="background:#FFFFFF;border:1.5px solid #D6DDD7;'
-        'border-top:4px solid #22372D;border-radius:10px;padding:1rem;margin-bottom:0.8rem;">'
+        '<div style="background:#FFFFFF;border:1px solid #E8E4DE;'
+        'border-radius:10px;padding:1rem;margin-bottom:0.8rem;">'
         '<div style="color:#22372D;font-size:0.8rem;font-weight:600;margin-bottom:0.6rem;">'
         '<i class="fas fa-trophy" style="color:#C97B52;margin-right:0.4rem;"></i>'
         'Top 3 variables</div>',
@@ -344,7 +344,7 @@ with col_fi_info:
 
     bot3 = feat_df.sort_values("Importance", ascending=True).head(3)
     st.markdown(
-        '<div style="background:#F9F7F3;border:1.5px solid #D6DDD7;'
+        '<div style="background:#F9F7F3;border:1px solid #E8E4DE;'
         'border-radius:10px;padding:1rem;">'
         '<div style="color:#22372D;font-size:0.8rem;font-weight:600;margin-bottom:0.6rem;">'
         '<i class="fas fa-arrow-down" style="color:#66736A;margin-right:0.4rem;"></i>'
@@ -424,8 +424,8 @@ st.markdown("<br>", unsafe_allow_html=True)
 # SECTION 5 — FOCUS DÉPRESSION
 # ══════════════════════════════════════════
 st.markdown(
-    '<div style="background:#FDF8F4;border:2px solid #E8D5C4;'
-    'border-left:6px solid #C97B52;border-radius:14px;'
+    '<div style="background:#FDF8F4;border:1px solid #EDE0D8;'
+    'border-left:3px solid #C97B52;border-radius:14px;'
     'padding:1.5rem 2rem;margin-bottom:1.5rem;">'
     '<div style="color:#C97B52;font-size:0.75rem;font-weight:700;'
     'text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.5rem;">'
@@ -458,10 +458,10 @@ dep_cards = [
 for col, (val, label, desc) in zip([col_dep1, col_dep2, col_dep3], dep_cards):
     with col:
         st.markdown(
-            f'<div style="background:#FFFFFF;border:1.5px solid #E8D5C4;'
-            f'border-top:4px solid #C97B52;border-radius:14px;'
+            f'<div style="background:#FFFFFF;border:1px solid #EDE0D8;'
+            f'border-radius:14px;'
             f'padding:1.4rem;text-align:center;'
-            f'box-shadow:0 4px 16px rgba(201,123,82,0.1);">'
+            f'box-shadow:0 2px 10px rgba(34,55,45,0.06);">'
             f'<div style="font-size:2.2rem;font-weight:800;color:#C97B52;">'
             f'{val:.0%}</div>'
             f'<div style="font-size:0.72rem;color:#8C948E;text-transform:uppercase;'
@@ -481,8 +481,8 @@ dep_total  = dep_row.sum()
 dep_correct = dep_row[dep_idx]
 
 st.markdown(
-    f'<div style="background:#FFFFFF;border:1.5px solid #E8D5C4;'
-    f'border-left:4px solid #C97B52;border-radius:12px;'
+    f'<div style="background:#FFFFFF;border:1px solid #EDE0D8;'
+    f'border-left:2px solid #D6DDD7;border-radius:12px;'
     f'padding:1.2rem 1.5rem;margin-bottom:1.5rem;">'
     f'<div style="color:#22372D;font-size:0.88rem;font-weight:700;margin-bottom:0.8rem;">'
     f'<i class="fas fa-magnifying-glass" style="color:#C97B52;margin-right:0.5rem;"></i>'
@@ -561,7 +561,7 @@ with col_bin1:
 
 with col_bin2:
     st.markdown(
-        '<div style="background:#FFFFFF;border:1.5px solid #D6DDD7;'
+        '<div style="background:#FFFFFF;border:1px solid #E8E4DE;'
         'border-radius:12px;padding:1.2rem;">'
         '<div style="color:#22372D;font-size:0.85rem;font-weight:600;margin-bottom:1rem;">'
         '<i class="fas fa-triangle-exclamation" style="color:#C97B52;margin-right:0.5rem;"></i>'
@@ -585,7 +585,7 @@ with col_bin2:
 # Conclusion finale
 st.markdown("<br>", unsafe_allow_html=True)
 st.markdown(
-    '<div style="background:#FFFFFF;border:2px solid #D6DDD7;'
+    '<div style="background:#FFFFFF;border:1px solid #E8E4DE;'
     'border-radius:14px;padding:1.8rem 2rem;'
     'box-shadow:0 4px 20px rgba(34,55,45,0.08);">'
     '<div style="color:#22372D;font-size:1rem;font-weight:700;margin-bottom:1rem;">'

@@ -83,8 +83,8 @@ page_header(
 
 # Bandeau problématique
 st.markdown(
-    '<div style="background:#FDF8F4;border:1.5px solid #E8D5C4;'
-    'border-left:6px solid #C97B52;border-radius:12px;'
+    '<div style="background:#FDF8F4;border:1px solid #EDE0D8;'
+    'border-left:3px solid #C97B52;border-radius:12px;'
     'padding:1rem 1.5rem;margin-bottom:1.5rem;">'
     '<div style="display:flex;align-items:center;gap:1rem;">'
     '<i class="fas fa-brain" style="color:#C97B52;font-size:1.3rem;flex-shrink:0;"></i>'
@@ -115,7 +115,7 @@ col_form1, col_form2 = st.columns(2)
 
 with col_form1:
     st.markdown(
-        '<div style="background:#FFFFFF;border:1.5px solid #D6DDD7;border-top:3px solid #4F7A67;'
+        '<div style="background:#FFFFFF;border:1px solid #E8E4DE;border-top:3px solid #4F7A67;'
         'border-radius:12px;padding:1.2rem 1.5rem;margin-bottom:0.5rem;'
         'box-shadow:0 3px 10px rgba(34,55,45,0.07);">'
         '<div style="color:#22372D;font-size:0.85rem;font-weight:600;margin-bottom:0.8rem;">'
@@ -130,12 +130,12 @@ with col_form1:
 
 with col_form2:
     st.markdown(
-        '<div style="background:#FFFFFF;border:1.5px solid #E8D5C4;border-top:3px solid #C97B52;'
+        '<div style="background:#FFFFFF;border:1px solid #EDE0D8;border-top:3px solid #C97B52;'
         'border-radius:12px;padding:1.2rem 1.5rem;margin-bottom:0.5rem;'
         'box-shadow:0 3px 10px rgba(201,123,82,0.08);">'
         '<div style="color:#22372D;font-size:0.85rem;font-weight:600;margin-bottom:0.8rem;">'
         '<i class="fas fa-heart-pulse" style="color:#C97B52;margin-right:0.5rem;"></i>'
-        'Habitudes — Facteurs liés à la dépression</div></div>',
+        'Habitudes : Facteurs liés à la dépression</div></div>',
         unsafe_allow_html=True
     )
     sleep_hours    = st.slider("Heures de sommeil / nuit", 2.5, 10.5, 7.0, 0.5)
@@ -237,8 +237,8 @@ if predict_btn:
         # Condition prédite générale
         accent = colors_condition.get(predicted_label, "#4F7A67")
         st.markdown(
-            f'<div style="background:#FFFFFF;border:1.5px solid #D6DDD7;'
-            f'border-top:4px solid {accent};border-radius:14px;'
+            f'<div style="background:#FFFFFF;border:1px solid #E8E4DE;'
+            f'border-radius:14px;'
             f'padding:1.5rem;text-align:center;margin-bottom:1rem;'
             f'box-shadow:0 4px 16px rgba(34,55,45,0.08);">'
             f'<div style="color:#8C948E;font-size:0.72rem;text-transform:uppercase;'
@@ -277,8 +277,8 @@ if predict_btn:
 
         if risk_factors:
             st.markdown(
-                '<div style="background:#FFFFFF;border:1.5px solid #E8D5C4;'
-                'border-left:4px solid #C97B52;border-radius:12px;'
+                '<div style="background:#FFFFFF;border:1px solid #EDE0D8;'
+                'border-left:2px solid #D6DDD7;border-radius:12px;'
                 'padding:1rem;margin-bottom:0.8rem;">'
                 '<div style="color:#22372D;font-size:0.82rem;font-weight:600;margin-bottom:0.6rem;">'
                 '<i class="fas fa-triangle-exclamation" style="color:#C97B52;margin-right:0.5rem;"></i>'
@@ -299,8 +299,8 @@ if predict_btn:
 
         if protect_factors:
             st.markdown(
-                '<div style="background:#EEF2EC;border:1.5px solid #D6DDD7;'
-                'border-left:4px solid #4F7A67;border-radius:12px;padding:1rem;">'
+                '<div style="background:#EEF2EC;border:1px solid #E8E4DE;'
+                'border-left:2px solid #D6DDD7;border-radius:12px;padding:1rem;">'
                 '<div style="color:#22372D;font-size:0.82rem;font-weight:600;margin-bottom:0.6rem;">'
                 '<i class="fas fa-shield-heart" style="color:#4F7A67;margin-right:0.5rem;"></i>'
                 'Facteurs protecteurs</div>',
@@ -446,8 +446,8 @@ if predict_btn:
     for i, (icon, color, title, desc) in enumerate(recommendations):
         with cols_reco[i % len(cols_reco)]:
             st.markdown(
-                f'<div style="background:#FFFFFF;border:1.5px solid #D6DDD7;'
-                f'border-top:4px solid {color};border-radius:12px;'
+                f'<div style="background:#FFFFFF;border:1px solid #E8E4DE;'
+                f'border-radius:12px;'
                 f'padding:1.2rem;box-shadow:0 3px 10px rgba(34,55,45,0.07);">'
                 f'<div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.7rem;">'
                 f'<div style="width:32px;height:32px;border-radius:8px;'
@@ -475,11 +475,11 @@ if predict_btn:
 
 else:
     st.markdown(
-        '<div style="background:#FFFFFF;border:1.5px solid #D6DDD7;border-radius:16px;'
+        '<div style="background:#FFFFFF;border:1px solid #E8E4DE;border-radius:16px;'
         'padding:3rem;text-align:center;box-shadow:0 4px 16px rgba(34,55,45,0.08);">'
         '<div style="width:64px;height:64px;border-radius:16px;background:#FDF8F4;'
         'display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;'
-        'border:1.5px solid #E8D5C4;">'
+        'border:1px solid #EDE0D8;">'
         '<i class="fas fa-crosshairs" style="color:#C97B52;font-size:1.5rem;"></i></div>'
         '<div style="color:#22372D;font-size:1.1rem;font-weight:600;margin-bottom:0.5rem;">'
         'Estimez votre risque de dépression</div>'
