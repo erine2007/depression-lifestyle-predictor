@@ -1,4 +1,4 @@
-# 🧠 MindTrack — Mental Health Analytics Platform
+# 🧠 MindTrack : Mental Health Analytics Platform
 
 > **Peut-on détecter une dépression grâce aux habitudes de vie ?**
 
@@ -123,7 +123,7 @@ L'application s'ouvre automatiquement sur `http://localhost:8501`
 
 ## Dataset
 
-**Source :** [Kaggle — Mental Health and Lifestyle Habits 2019-2024](https://www.kaggle.com/datasets/atharvasoundankar/mental-health-andlifestyle-habits-2019-2024/data)
+**Source :** [Kaggle - Mental Health and Lifestyle Habits 2019-2024](https://www.kaggle.com/datasets/atharvasoundankar/mental-health-andlifestyle-habits-2019-2024/data)
 
 | Caractéristique | Détail |
 |----------------|--------|
@@ -176,7 +176,7 @@ Application Streamlit        → Visualisation et simulateur interactif
 
 > Baseline aléatoire : 25% (4 classes équilibrées)
 
-### Focus dépression — Classification binaire
+### Focus dépression : Classification binaire
 
 | Modèle | Accuracy | F1-Score Dépression |
 |--------|----------|---------------------|
